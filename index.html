@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="Container">
-        <div id="header">
-            <div>NotePad</div>
-            <div> Save
+    <div id="container">
+        <div id="headerPanel">
+            <div>
+                <h4>Online Notepad</h4>
+            </div>
+            <div>
+                <span>Save Notes</span>
                 <input type="checkbox" name="tick" id="savetext">
             </div>
         </div>
-        <div id="textarea"></div>
+            
+        <div id="textPanel">
+            <textarea name="textArea" id="textArea" cols="30" rows="10" placeholder="Write your text here"></textarea>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
