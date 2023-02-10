@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+#Container{
+    background-color: cornsilk;
+    width: 80vmin;
+    height: 50vmin;
+    border: 1px solid #000;
+}
+
+#header{
+    background-color: azure;
+    width: calc(80vmin - 4px);
+    height: 20px;
+    padding: 1px 1px 1px 1px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
