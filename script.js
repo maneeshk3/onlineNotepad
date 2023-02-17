@@ -11,7 +11,9 @@ function init(){
     
     if(localStorage.getItem(saveTextData) != null){
         saveText.value = localStorage.getItem(saveTextData);
+        tick.checked = true;
     }
+    
 
     saveText.oninput = function(){
         if (tick.checked){
@@ -29,6 +31,8 @@ function init(){
         }
         if(tick.checked === false){
             localStorage.setItem(saveTextData,"");
+            localStorage.removeItem(saveTextData);
+
         }
     }
 
